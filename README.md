@@ -32,7 +32,7 @@
 
 ###
 
-<p align="left">👋 Hi, I’m Josh from Thailand!<br><br>- 🔭 I’m a Full-Stack Engineer building end-to-end solutions.<br>- 📚 Currently diving into Angular and .NET to expand my expertise.<br>- ⚡ In my free time, I love crafting small-scale services and creating music tracks.<br><br>Let’s connect and build something amazing together! 🚀</p>
+<p align="left">👋 Hi, I’m Josh from Thailand!<br><br>- 🔭 I’m a Full-Stack Engineer building end-to-end solutions.<br>- 📚 Currently building tools that will help with searching the web easier and more refined!.<br>- ⚡ In my free time, I love crafting small-scale services and creating music tracks.<br><br>Let’s connect and build something amazing together! 🚀</p>
 
 ###
 
