@@ -3,7 +3,7 @@
   <title id="t">LinkedIn</title>
   <desc id="d">LinkedIn, opens in a new page</desc>
   <style>
-    @font-face { font-family: 'JP Sans'; src: url(data:font/woff2;base64,d09GMgABAAAAAANYABAAAAAAB0AAAAL7AAMDVAAAAAAAAAAAAAAAAAAAAAAAAAAAGhYbgRIcKgZgP1NUQVRIAFQRCAqCOIFvATYCJAMgCxIABCAFhEgHIAwHG80FIC4GnLKJB1/V1IVivZ28Fs0dDp8e4vm3Yb9z38zWoqhdEeK/pFi6A/dRkh5PPPFVowRIMAbWh7fTd6ix5cZAlXERf1J42DS1sziKWydihbbyPHTq+5cQhTjCAWlxgYewWpqCG6Qbq738hwXI/8PC/7mmXiTdO9DCMj3Co6h1gvxRp9jAJj6geL43zOdTndN0p4xwIlXPn/oNCeaAEjEUwdQlkeg+t7gavtMOYoKvDgcoZMLbTHBHEF0Zi7FyDYs7srEavT66KN1AxECBJkqJazVldIWQDr8EAHo5n3Eu1FieAh7QMRkgjBC4+Jvc7bPKcIRT2rz/L6A9ogCBfMs2OIcRMVbYo3EJvVRrCAWOZx0GylN0ewwqPR+h9qCJygwEFBr2GMEe6wjMjZXunBwFipVW4JxsBYoSH1HvDnZs24oCAJGKH2IM1mCG++AFgA5D9poD9XYym3e0D+eztqiXPozoB7M3R4xee9a2ne+osdOtp2e6uTBnzBLQn1BqLwJh8byO93Jw7NhTotNX5ua3b9OPfYKmmSaUbY5XdreW5rc319Xl7Q2D0emkrS3d2RtXo0HZ5rzM/lZRVvFjL0PZpn4bUy+WRp0zZEv0Dd/OjOSAtbK4Lr7iqVq6c4Pz6rfbOvOC8wH8R6E1D+vPmkVtfsm/cWt/gd+jYAz86U4sEQm1pLfBUIGw61itDuJfAEVJwDj/RBIsKwUo8+8i/Wz+0NlBFsF43wcInJp5DUbaCX5CKMcpJ3JZ+iU3R77l7lak8sCJ1EtDN2JThHk+ZbqnYplekZ8faWaaL7KYWfSx0VLTIDiRlCJF4FTT4HHydTDR45lw8tiYETw7PU55CtXxXch9MzgQGmY2dhwhDYKwsEukoKCmRWg4dJLrYmakYNTBxtDATM0Mx46MRgNGMur9Re2dX4mn5mDQwSaKnFKEKEnyZctSFlhPTONtMpp/ENPKC7X4ARS0zGJ9v6wvK3X4xcACRAdDqtClcmRmO9/DAIcT0tYf1KHZdwAAAA==) format('woff2'); }
+    @font-face { font-family: 'JP Sans'; src: url(data:font/woff2;base64,d09GMgABAAAAAANcABAAAAAAB0AAAAL/AAMDVAAAAAAAAAAAAAAAAAAAAAAAAAAAGhYbgRIcKgZgP1NUQVRIAFQRCAqCOIFvATYCJAMgCxIABCAFhEgHIAwHG80FIK4GbHcaMIq2WbFw0NnIa0rXdHraXDxPjf3v3N19Kgn19IfpYtKgfVIUr0xnumZSgAilwP95O32HGltuDISCuog/KTxsXdtZHMWtE7FCW4mnP3PfT4hCHOFkPMULPITV0il4A91YbfK/EasB/s9h5/9h4f9cUy+S7h1oYZke4VHUOkH+qFNsYBMfUDzfG+bzqc5pulNGOJGq50/9hgRjQBHRFcHQAWJ4W1BWB8mzbuSFZA22wJCBDnohFkE0RV/0FUeQOCkPqdLro4mi6YjoKKCKoohrNWV0CJPOvQQAtLI3UzqUsQTgKh2TDphhAhd/k0utpRKOUCqq9/8FqI8IgEC+ZRt7ECL6CtZwHICvbHaEAZvzbjcWL5o1AiUt7ygHVFEyAgEFFWuEYI10ChjrK5o98hUrUzEB9shTrDTxEd2xnbbbEgAQmUhB9MEcGOEK8BSABkP2qgO1ejAaN7R3x6M6Kc+SCNF3Ri9PMHEd39B2ucMmz7fx8enmxJgxS0B7iNkSEITJk0Y6wcGxzXiJDp+bm2/cpx8HGa0zrVC5PV7Z3Vqa395ct1V1NY9Ijaiz0xgZUNTboXJ7Xhl6q66s/glVQuW2aRs+vvhbnJGsLdE3f0dM2rSNm3GnsuKp2vsKMgubtjt7CjOLAPAfhlrdazozZPUp2l8sUf8Cfo+MWMCfhhXYAGWFb6OrgLDrWFkfJLUAGCUB/fwjJnizFEOlfxcZYvOHzg6SCPr7PkDg1MgLqFIP8BOEcuxwIhdTv+TqlG+5ORGu3LEtTVLXsQQVYZxPmeapWIZX5OdHGhnmi7N8/AYFOdjYIRQxITERSh07GqVINy8XmhelUJAPQgtxoVSlUCffC93XJAyx8wkKoTDZIYhfiJqAgI0DYhfWg6+Xj4eAR7cgQzcfGx+cEDJ2DRjx2PZntXd+DZpNmFu3IAk+IREJjSJ5LCoD64lpvI1H8w9iWnmhAT2AgoNPrO+X9WWlEb0YWAzp5k4VetWMzGznewhga0do6w9MIwcAAAA=) format('woff2'); }
     
     .disp { font-family: 'JP Display', serif; fill: #1D1D1B; }
     .caps { font-family: 'JP Sans', sans-serif; fill: #8E8E8C; text-transform: uppercase; }
@@ -22,11 +22,9 @@
       .lift { animation: lift 0.8s cubic-bezier(0.23, 1, 0.32, 1) both; }
       .rise { transform-box: fill-box; }
       /* Constant motion is linear; the pulse is a slow breath, not a blink. */
-      .ticker { transform-box: fill-box; animation: ticker 48s linear infinite; }
       .pulse { animation: pulse 2.4s cubic-bezier(0.77, 0, 0.175, 1) infinite; }
       .odo { animation: odo 13s cubic-bezier(0.77, 0, 0.175, 1) 2.2s infinite; }
     }
-    @keyframes ticker { to { transform: translateX(-50%); } }
     @keyframes pulse { 50% { opacity: 0.3; } }
     /* Odometer: hold each phrase, then a short eased step up to the next. The last row repeats
        the first, so the jump back to 0 is invisible. At rest it shows the first phrase. */

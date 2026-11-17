@@ -3,7 +3,7 @@
   <title id="t">X</title>
   <desc id="d">X, opens in a new page</desc>
   <style>
-    @font-face { font-family: 'JP Sans'; src: url(data:font/woff2;base64,d09GMgABAAAAAAKcABAAAAAABfwAAAJCAAMDVAAAAAAAAAAAAAAAAAAAAAAAAAAAGhQbZBwqBmA/U1RBVEgAPBEICmBlATYCJAMMCwgABCAFhEgHIAwHG+cEERWcGSC+OLCNrQ1VYSTDpUH65GHYSbdxcen8CP5sj4fv96Od+95fd9yzmmWGtolq06ERzUIX8USEPdom21L5iEkbaWJJNL8Ydoj2f1504wDIwkPaiZtpbQ67dGyDkOJoTA/jaA0KE0y8S8c6D/8FXvTvgfR1m+7xCwZlMsWgGYFqQPgVKg0yQZo5e+FKtQe3nTysVgEfRuzAruOHlRMgFZIwlEuahXTqIzTxfqmMeohhePsRAIrUP84rIXWntViwHRObDYthyAT8L3Nnzljivn7W5q//L3+NsQiIX+kG+slCKJfQLGGQdGbP3pOBfSe3HYxKodAsI0UR50m3kYUUVSBAQkazLNCsMAylCiHpZ20PcLvnvasBCNFDHUIGpXJL6QsoQBIURXVVrknbazIWb1hftW5D1dp1levXTnh+4Xl9N1zcoOX3ph/r993rdbfXPnuXP5v2Per9sDe4L5DzyrvrHp/bUjfxb3nOX+FNd99y+DKgMy2kQ+kGSiUQTFJPZxOA5gGBYY5/MagoCLJqgRROVenOoqjAQ45M6OUhk9R6zWRT/WQKo2IUU6Iz1tKlRsRxRVAdl42ClB6VV+iVV6pSGYAPUC+tlqpHcRhH6KM4uuIq5xW6tNDzLkePEJgRtH92N/QK2g6Zqu/rbhsEUvdqID6FMihx658WIGHoAtWA2pPdrfa+4cXlUOA28cMoSa/Hwz2VSPImD9kHkZTu/PgAHA1LK19UyeDPH+YH3XpcaPqCElcb6InJ6PXgWjEAAAA=) format('woff2'); }
+    @font-face { font-family: 'JP Sans'; src: url(data:font/woff2;base64,d09GMgABAAAAAAKcABAAAAAABfwAAAJDAAMDVAAAAAAAAAAAAAAAAAAAAAAAAAAAGhQbZBwqBmA/U1RBVEgAPBEICmBlATYCJAMMCwgABCAFhEgHIAwHG+cEERWcGSC+POAOiy+8hF7oDR4lWp0GMZYaz1V8W09/Md5MHQ/f70c7972/oopJVrNM3URmmA6NaFa6eiLCHm2Tbal8xKSNNLEkml8MO0RTe+sjALpDqytT/+dFN87CQ9qJm2ltDrt0bIOQ4mhMD+NoDQoTTLxLxzoP/wVe9O+B9HWb7vELBmUyxaAZgWpA+BUqDZstLVm2ZovaMwevnFOrgA8jdvropXPKCZAKSRjKJc1COvUKTbxfKqMeNRFvPwJAkQbiphLSWNqB1dsxsc/EmIhMwP+yYsni9Z7rtyN//X/5a8xAQPxKD9AvC6FcQrOEYen68RNXAievHDwTlUKhWUaKIm6SHiMLKapAgISMZlmgWWEiShVC0m/HOHB7/L27AQgxTh1CBqVyS+kDFCAJiqK6KtekQzUZi3fvqtq5u2rHzspdO2Zbfd/areV3Pzz5rPtp90l7lz+dfMVLwHOBnLc83fng7P66OX/Lc/4Kb8Yqhy+DkwotpLPpAUolEExSTzcSgOYBgWGOfzGoKAiyaoEUTlUZy6KowEuOTOj2kklqvWayBX4yhakxlSnRGTvoUpPjkiKojttGQUqPyiv0zitVqQzAB6iXVkvVoziMI/RRHF1xlfMKXVroeZejRwjMCNo/uxt6BW2HTNX3dbcNAql7NRCfQhmUuPVPC5AwdIFqQO3J7lZ73/Dicihwm/hhlKTX4+GeSiR5k4fsg0hKd358AI6GpZUvqmTw5w/zg249LjR9QYmrDYzHZPR+cK8YAAA=) format('woff2'); }
     
     .disp { font-family: 'JP Display', serif; fill: #F2F2F0; }
     .caps { font-family: 'JP Sans', sans-serif; fill: #8A8A88; text-transform: uppercase; }
@@ -22,11 +22,9 @@
       .lift { animation: lift 0.8s cubic-bezier(0.23, 1, 0.32, 1) both; }
       .rise { transform-box: fill-box; }
       /* Constant motion is linear; the pulse is a slow breath, not a blink. */
-      .ticker { transform-box: fill-box; animation: ticker 48s linear infinite; }
       .pulse { animation: pulse 2.4s cubic-bezier(0.77, 0, 0.175, 1) infinite; }
       .odo { animation: odo 13s cubic-bezier(0.77, 0, 0.175, 1) 2.2s infinite; }
     }
-    @keyframes ticker { to { transform: translateX(-50%); } }
     @keyframes pulse { 50% { opacity: 0.3; } }
     /* Odometer: hold each phrase, then a short eased step up to the next. The last row repeats
        the first, so the jump back to 0 is invisible. At rest it shows the first phrase. */

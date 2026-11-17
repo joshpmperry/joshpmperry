@@ -96,11 +96,9 @@ def base_css(t, extra=""):
       .lift {{ animation: lift 0.8s {EASE_OUT} both; }}
       .rise {{ transform-box: fill-box; }}
       /* Constant motion is linear; the pulse is a slow breath, not a blink. */
-      .ticker {{ transform-box: fill-box; animation: ticker 48s linear infinite; }}
       .pulse {{ animation: pulse 2.4s {EASE_IN_OUT} infinite; }}
       .odo {{ animation: odo {ODO_CYCLE}s {EASE_IN_OUT} 2.2s infinite; }}
     }}
-    @keyframes ticker {{ to {{ transform: translateX(-50%); }} }}
     @keyframes pulse {{ 50% {{ opacity: 0.3; }} }}
     /* Odometer: hold each phrase, then a short eased step up to the next. The last row repeats
        the first, so the jump back to 0 is invisible. At rest it shows the first phrase. */
@@ -140,10 +138,10 @@ def delay(s):
 
 
 # ---------------------------------------------------------------- hero
-ODO = [("Now", "helping shops see their real profit"),
-       ("Side quest", "making search less painful"),
+ODO = [("Now", "software engineer at Balerion"),
+       ("Side quest", "an e-commerce tool that shows shops their real profit"),
        ("Off the clock", "writing music"),
-       ("Always", "trusting the process")]
+       ("Always", "build with purpose")]
 ODO_LH, ODO_CYCLE = 40, 13
 TICKER = ["Go", "TypeScript", "React", "Next.js", "TanStack", "PostgreSQL", "Redis", "GCP", "Docker"]
 
@@ -160,7 +158,18 @@ def build_hero():
             letters.append((ch, x))
         x += disp.width(ch, SIZE) + TRACK * SIZE
 
-    seq = sans.use("".join(f"{w}   /   " for w in TICKER))
+    # Ticker: the strip is several copies of one sequence and slides left by exactly one copy,
+    # measured from the font, so the loop has no seam and the strip never runs out.
+    gap = "\u00a0\u00a0\u00a0/\u00a0\u00a0\u00a0"
+    seq = sans.use("".join(f"{w}{gap}" for w in TICKER))
+
+    def copy_w(size, ls):
+        return sans.width(seq.upper(), size) + ls * len(seq)
+
+    w_wide, w_narrow = copy_w(13, 1.2), copy_w(30, 1.0)
+    copies = int(W / w_wide) + 2
+    strip = seq * max(copies, int(W / w_narrow * 2.2) + 2)
+    speed = 28  # px per second at desktop size
     for k, v in ODO:
         light.use(f"{k} — {v}")
 
@@ -183,7 +192,7 @@ def build_hero():
     <rect width="{W}" height="{H}" fill="{t['ink']}"/>
 
     <g class="fade"{delay(0.05)}>
-      <text class="caps" x="{M}" y="50" font-size="13" letter-spacing="0.6">Software Engineer</text>
+      <text class="caps" x="{M}" y="50" font-size="13" letter-spacing="0.6">Full-Stack Developer</text>
       <text class="caps" x="{W - M}" y="50" font-size="13" letter-spacing="0.6" text-anchor="end">Bangkok</text>
     </g>
     <line class="rule draw from-left" x1="{M}" y1="72.5" x2="{W - M}" y2="72.5"{delay(0.1)}/>
@@ -203,15 +212,23 @@ def build_hero():
 
     <line class="rule draw from-left" x1="0" y1="386.5" x2="{W}" y2="386.5"{delay(0.6)}/>
     <g class="fade"{delay(1.1)}>
-      <text class="caps ticker" x="{M}" y="430" font-size="13" letter-spacing="1.2">{seq}{seq}</text>
+      <text class="caps ticker" x="{M}" y="430" font-size="13" letter-spacing="1.2">{strip}</text>
     </g>
   </g>"""
 
-    extra = """    .status-n { transform-box: view-box; transform-origin: 36px 335px; }
-    @media (max-width: 560px) {
-      .caps { font-size: 30px; letter-spacing: 1px; }
-      .status-n { transform: scale(1.9); }
-    }
+    extra = f"""
+    @media (prefers-reduced-motion: no-preference) {{
+      .ticker {{ animation: ticker {w_wide / speed:.1f}s linear infinite; }}
+    }}
+    .ticker {{ font-kerning: none; font-feature-settings: "kern" 0, "liga" 0; }}  /* match the measured width */
+    @keyframes ticker {{ to {{ transform: translateX(-{w_wide:.2f}px); }} }}
+    @keyframes ticker-n {{ to {{ transform: translateX(-{w_narrow:.2f}px); }} }}
+    .status-n {{ transform-box: view-box; transform-origin: 36px 335px; }}
+    @media (max-width: 560px) {{
+      .caps {{ font-size: 30px; letter-spacing: 1px; }}
+      .status-n {{ transform: scale(1.9); }}
+      .ticker {{ animation-name: ticker-n; }}
+    }}
 """
     write("hero", W, H, "Josh Perry",
           "Josh Perry. Software engineer, Bangkok. " + " ".join(f"{k}: {v}." for k, v in ODO)
@@ -221,12 +238,12 @@ def build_hero():
 
 # ---------------------------------------------------------------- index
 ROWS = [
-    ("About", [("I like interfaces that get out of the way, and motion that’s there for a reason. "
-                "British and Thai, based in Bangkok.", "ink"),
+    ("About", [("Full-stack developer. I like systems that scale and hold up under pressure, and I sweat "
+                "the details, from the database schema to the last bit of motion. British and Thai, based in Bangkok.", "ink"),
                ("Once played ice hockey for Thailand’s U20 squad, which still surprises people. "
                 "These days I write music and take apart things that were working fine.", "grey")]),
-    ("Now", [("Helping shops see their real profit, and grow it without the guesswork.", "ink"),
-             ("Side quest: a less painful way to search the web.", "grey")]),
+    ("Now", [("Software engineer at Balerion, building the systems that keep businesses moving.", "ink"),
+             ("Side quest: an e-commerce tool that shows shops their real profit, and how to grow it safely.", "grey")]),
     ("Usually built with", [("Go, TypeScript, React, Next.js, TanStack, PostgreSQL, Redis, GCP, Docker.", "ink")]),
 ]
 
@@ -324,13 +341,13 @@ def build_links():
 
 def build_signoff():
     disp, _, _ = faces()
-    text = disp.use("Trust the process.")
+    text = disp.use("Devil’s in the details.")
     w = int(disp.width(text, 24) + 8)
 
     def body(t):
         return f'  <text class="disp fade" x="2" y="26" font-size="24" style="fill:{t["grey"]};animation-delay:.4s">{text}</text>'
 
-    write("signoff", w, 36, "Trust the process.", "Trust the process.", body, lambda t: base_css(t), (disp,))
+    write("signoff", w, 36, "Devil’s in the details.", "Devil’s in the details.", body, lambda t: base_css(t), (disp,))
 
 
 if __name__ == "__main__":
