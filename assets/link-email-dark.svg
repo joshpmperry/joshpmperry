@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="24" viewBox="0 0 60 24" role="img" aria-labelledby="t d">
+  <!-- Fonts: Newsreader (c) 2020 The Newsreader Project Authors; Hanken Grotesk (c) 2021 The Hanken Grotesk Project Authors. Subsets embedded under the SIL Open Font License 1.1. -->
+  <title id="t">Email</title>
+  <desc id="d">Email, opens in a new page</desc>
+  <style>
+    @font-face { font-family: 'JP Sans'; src: url(data:font/woff2;base64,d09GMgABAAAAAAMcABAAAAAABvAAAALCAAMDVAAAAAAAAAAAAAAAAAAAAAAAAAAAGhYbgQYcKgZgP1NUQVRIAFQRCAqBfIFDATYCJAMcCxAABCAFhEgHIAwHG5EFCJ6DTdmNFceJmwwPeIiKmsfyK4uHvv343ZndbyKh0MwiVG8WLfSfyByaR9NESSRoYh1/P2+nLwC2XCX+UtecA/1UGqaunTZhrSdwhaY2/xux8v+w8H9uqXVradzHDDLupvMGDvC4tgFNcEI3yIGz4d7AJx7IQCxtV+dxXjJpCUl7HOsh0A1IIbQIgU7Lcon3N7b3gf4Sif2gV6EhEBfpsB+UCIQqtQvt0iIpthWTKAAACEVIVUhFkFB6M2TEq5Jp5zMA1FwQbWohdzIAx+zgOAXJkaygwepxeH8dgmOEjvL2/waUz5EFICB+5A7mSYTQLjFMjGXiayyHRcD5y6RXpBaqYRJk1LhOvkERMrpAgETBMInAMKndQLd2qZpXo0GLjgYUaf+TzUfHDprdZlsAgBANfQhtoBft2AUcA6CCDPkFam2r3bW1XyPpyXM6SXfXRQ2vnhgbHNT0a2Q9urVcV0tXlQhzUj1ZdbaMjC0cdUhzH7Ye5l2jN0bB1LF9EO88c1Z6Xpp7a7Lz73Qn9PIMRV67Ufd3BAF6ObSTHaGYVRsPicakr9fv6Z26tQ+8s08dB8BfIpRywi+LeZ80lP+1S8pnwIcdlxLwadF+ignkz9xBqwTBE41DU4hxDxFYmLb4JzeXwZQtgPxD8QuVJkAhRaBNPzEIcKvLjiJqB94CBmHaKaRe76HY7Quq7UiHFpMxxLfajLAg6I6bYXXOjs4xef+TunTGE/sEBM0L47E4GCFXtlw5CH04NEIzkp8HzY/QJCwAo0V4ELo4KrBu+L01ojBOQFgEIRkHw4IiSmXJwuJhnKhpmdwCfLL4kML+q1cAKyAqIgsnIc7A7p6i+HgPGivKixSWJ1O2HHnKNKtXBxHtTJNvyrDuYTTtpAPoEFJeoGgKQ90tB9HfWaAWGMmL59YjwIfkJwGarYP6i9AD6Q==) format('woff2'); }
+    
+    .disp { font-family: 'JP Display', serif; fill: #F2F2F0; }
+    .caps { font-family: 'JP Sans', sans-serif; fill: #8A8A88; text-transform: uppercase; }
+    .body { font-family: 'JP Sans Light', sans-serif; fill: #F2F2F0; }
+    .grey { fill: #8A8A88; }
+    .rule { stroke: #8A8A88; stroke-opacity: 0.45; stroke-width: 1; }
+    .from-left { transform-box: fill-box; transform-origin: left center; }
+
+    /* Each keyframe names only its starting point: the resting state is the plain, visible one,
+       so a renderer that skips CSS animation still shows everything in place. */
+    @media (prefers-reduced-motion: no-preference) {
+      .rise { animation: rise 1s cubic-bezier(0.23, 1, 0.32, 1) both; }
+      .draw { animation: draw 1.1s cubic-bezier(0.77, 0, 0.175, 1) both; }
+      .fade { animation: fade 0.8s cubic-bezier(0.23, 1, 0.32, 1) both; }
+      .lift { animation: lift 0.8s cubic-bezier(0.23, 1, 0.32, 1) both; }
+    }
+    @keyframes rise { from { transform: translateY(105%); } }
+    @keyframes draw { from { transform: scaleX(0); } }
+    @keyframes fade { from { opacity: 0; } }
+    @keyframes lift { from { opacity: 0; transform: translateY(10px); } }
+
+  </style>
+  <text class="caps" x="0" y="17" font-size="13" letter-spacing="0.4" style="fill:#F2F2F0">Email</text>
+  <path d="M47.0 15.5 L54.0 8.5 M48.5 8.5 H54.0 V14" stroke="#F2F2F0" stroke-width="1.1" fill="none"/>
+</svg>

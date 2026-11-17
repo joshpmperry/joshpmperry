@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="79" height="24" viewBox="0 0 79 24" role="img" aria-labelledby="t d">
+  <!-- Fonts: Newsreader (c) 2020 The Newsreader Project Authors; Hanken Grotesk (c) 2021 The Hanken Grotesk Project Authors. Subsets embedded under the SIL Open Font License 1.1. -->
+  <title id="t">LinkedIn</title>
+  <desc id="d">LinkedIn, opens in a new page</desc>
+  <style>
+    @font-face { font-family: 'JP Sans'; src: url(data:font/woff2;base64,d09GMgABAAAAAANUABAAAAAAB0AAAAL6AAMDVAAAAAAAAAAAAAAAAAAAAAAAAAAAGhYbgRIcKgZgP1NUQVRIAFQRCAqCOIFvATYCJAMgCxIABCAFhEgHIAwHG80FIJ4DbssMr2oJ56W3k0L6risaIv794bc5971fi9qlNkWIX0mxdAduUZIeTzzxVaMESDAG1ofW2r8VXBobUbM507lDPDRLkEW1kVQq/tvnIf7Udz8hCnEEQgFpcYEvklJ1Cm6Qbqz28v+w8H+uqRdJ9w60sEyP8ChqnSB/1Ck2sIkPKJ7vDfP5VOc03SkjnEjV86d+Q4I5oEQMRTB1STC2Tc8the2wiapgq8MJDDIgOhXMEURXxmKsXMPjjlS8Rq+PLko3EDFQoIlS4lpNGV3hSbtfAgC9nI9BJtSsdIAHdEx6eIYncPE3udumFOCYIL/6+F9Ce0QACORbdsA5nIixwh6LS9ipWEIZcDxqUjCWotvjUNHzEWoPmqiYgYBCwx4n2OMdgbmx0p2TJkuu/ATOSZUlJ/EReXfI3dzJbQwAiCR2iDFYgxnugxcAOgzZaw7U68ls3tE+nM/aol7acKIfzN4c0X9jWd52vmcGTneWlunmwpwxS0B/woitKITF8wpi5eDYsaVEp6/MzW/fRp86PGrGalCwOZnb256Z3FleFBc2VnWHJtKGhkRje0SZBAWbiwL9e1FB0a++AAWbyh2MvGqqZUaXbdFX/RiTYh3WFMRlkRVPVdea7pxRudPQnOGcCeA/Bq16WHneShrsYn/mXPsL/J55mAN/GtcqBENN2R0wVCDsOlarg9gXwFASMI5/ggkWlCwU+O8inWz8Q8cHeQTjfR8gcGrmNTipJ/gJoRynnMpl6ZfcHPmRu1vhKw8cRKU0dCN0ijCPT5nuqVimV+TnR5qZxhcp1DQ66EiJSVCCYIGCBRGUkiAEmZqoyBEqggw6ahShJycoTKEyvgW9bxIDSkJNR0/gSYKiNPSiBQggJkVJGDTz10JNKYBSEx1DBTUxNRw9MhINGPkR7+/V3vnFCDEDhSY6IfwFChIiRqZUKQoC64lpvM2P5h/EtPJCOTKAgpRarO+X9WWlAlkMzEI1UaQKLYpHZrbzPRxwMk/a+oPJ1vwS) format('woff2'); }
+    
+    .disp { font-family: 'JP Display', serif; fill: #F2F2F0; }
+    .caps { font-family: 'JP Sans', sans-serif; fill: #8A8A88; text-transform: uppercase; }
+    .body { font-family: 'JP Sans Light', sans-serif; fill: #F2F2F0; }
+    .grey { fill: #8A8A88; }
+    .rule { stroke: #8A8A88; stroke-opacity: 0.45; stroke-width: 1; }
+    .from-left { transform-box: fill-box; transform-origin: left center; }
+
+    /* Each keyframe names only its starting point: the resting state is the plain, visible one,
+       so a renderer that skips CSS animation still shows everything in place. */
+    @media (prefers-reduced-motion: no-preference) {
+      .rise { animation: rise 1s cubic-bezier(0.23, 1, 0.32, 1) both; }
+      .draw { animation: draw 1.1s cubic-bezier(0.77, 0, 0.175, 1) both; }
+      .fade { animation: fade 0.8s cubic-bezier(0.23, 1, 0.32, 1) both; }
+      .lift { animation: lift 0.8s cubic-bezier(0.23, 1, 0.32, 1) both; }
+    }
+    @keyframes rise { from { transform: translateY(105%); } }
+    @keyframes draw { from { transform: scaleX(0); } }
+    @keyframes fade { from { opacity: 0; } }
+    @keyframes lift { from { opacity: 0; transform: translateY(10px); } }
+
+  </style>
+  <text class="caps" x="0" y="17" font-size="13" letter-spacing="0.4" style="fill:#F2F2F0">LinkedIn</text>
+  <path d="M66.9 15.5 L73.9 8.5 M68.4 8.5 H73.9 V14" stroke="#F2F2F0" stroke-width="1.1" fill="none"/>
+</svg>
