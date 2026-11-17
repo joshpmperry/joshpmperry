@@ -9,7 +9,7 @@
   <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/index-narrow-dark.svg">
   <source media="(max-width: 600px)" srcset="./assets/index-narrow-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="./assets/index-dark.svg">
-  <img src="./assets/index-light.svg" width="100%" alt="About: I build software that solves real problems, with an eye for the details people feel: clean interfaces and motion that's there on purpose. British and Thai. Off the clock: music, ice hockey, taking things apart. Now: Building the next E-Commerce optimization platform, See your real profit. Grow it safely. Stack: Go, TypeScript, React, Next.js, PostgreSQL, Redis, GCP, Docker.">
+  <img src="./assets/index-light.svg" width="100%" alt="About: I build software that solves real problems, with an eye for the details people feel: clean interfaces and motion that's there on purpose. British and Thai. Off the clock: music, ice hockey, taking things apart. Now: Building the next e-commerce optimization platform. See your real profit. Grow it safely. On the side: something to make the web easier to search. Stack: Go, TypeScript, React, Next.js, PostgreSQL, Redis, GCP, Docker.">
 </picture>
 
 <br>

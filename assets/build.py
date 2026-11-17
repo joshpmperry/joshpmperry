@@ -158,7 +158,9 @@ ROWS = [
     ("About", [("I build software that solves real problems, with an eye for the details people feel: "
                 "clean interfaces and motion that's there on purpose.", "ink"),
                ("British and Thai. Off the clock: music, ice hockey, taking things apart.", "grey")]),
-    ("Now", [("Building something to make the web easier to search.", "ink")]),
+    ("Now", [("Building the next e-commerce optimization platform.", "ink"),
+             ("See your real profit. Grow it safely.", "grey"),
+             ("On the side: something to make the web easier to search.", "ink")]),
     ("Stack", [("Go, TypeScript, React, Next.js, PostgreSQL, Redis, GCP, Docker.", "ink")]),
 ]
 
