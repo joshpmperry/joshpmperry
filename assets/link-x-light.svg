@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 30 24" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" width="82" height="40" viewBox="0 0 82 40" role="img" aria-labelledby="t d">
   <!-- Fonts: Newsreader (c) 2020 The Newsreader Project Authors; Hanken Grotesk (c) 2021 The Hanken Grotesk Project Authors. Subsets embedded under the SIL Open Font License 1.1. -->
   <title id="t">X</title>
   <desc id="d">X, opens in a new page</desc>
   <style>
-    @font-face { font-family: 'JP Sans'; src: url(data:font/woff2;base64,d09GMgABAAAAAAKYABAAAAAABfwAAAI/AAMDVAAAAAAAAAAAAAAAAAAAAAAAAAAAGhQbZBwqBmA/U1RBVEgAPBEICmBlATYCJAMMCwgABCAFhEgHIAwHG+cEERWcGSC+OLDbfGzhMDjQThgi8WjqeHnN/hFu6iN42o82b/efO+5ZzTL1ElW0QSOaleaeiHBH22RbKh8xaSNNLInmF8MO0QDo/7zoxll4SDtxM63NYZeObRBSHI3pYRytQWGCiXfpWOfhv8CL/j2Qvm7TPX7BoEymGDQjUA0Iv0KlQSZIM2cvXKn24LaTh9Uq4MOIHdh1/LByAqRCEoZySbOQTn2EJt4vlVEPMQxvPwJAkfrHOSWk7rQWC7ZjYrNhMQyZgP9l7swZSzzWz9r89f/lrzEWAfEr3UE/WQjlEpolDJLO7Nl7MrDv5LaDUSkUmmWkKOIc6T6ykKIKBEjIaJYFmhWGoVQhJP2s7QFu97x3MwAheqhDyKBUbil9AQVIgqKorso1aXtNxuIN66vWbahau65y/doJz88/r++GCxu0/N70Y/2+R70e9tpn7/Jn075nvZ/2Bo8Fcl75cN2L61vqJv4tz/krvOnuWw5fBrR910I6lO6gVALBJPV0NgFoHhAY5vgXg4qCIKsWSOFUle4sigo85ciEXp4ySa3XTDbVT6YwKkYxJTpjLV1qRBxXBNVxyShI6VF5hd54pSqVAfgA9dJqqXoUh3GEPoqjK65yXqFLCz3vcvQIgRlB+2d3Q6+g7ZCp+r7utkEgda8G4lMogxK3/mkBEoYuUA2oPdndau8bXlwOBW4TP4yS9Ho83FOJJG/ykH0QSenOjw/A0bC08kWVDP78YX7QrceFpi8ocbWBnpiM3g5uFQMAAA==) format('woff2'); }
+    @font-face { font-family: 'JP Sans'; src: url(data:font/woff2;base64,d09GMgABAAAAAAKcABAAAAAABfwAAAJEAAMDVAAAAAAAAAAAAAAAAAAAAAAAAAAAGhQbZBwqBmA/U1RBVEgAPBEICmBlATYCJAMMCwgABCAFhEgHIAwHG+cEERWcGSC+OLCNRY+26hYZH+umzOTG4liGvc2gzHuEf+Phv/1o9838NUfEElnNsnii2unQ3EIX8USEPdom21L5iEkbaWJJNL8YdojmS250AFTj/8TNtDaHXTq2QUhxNKaHcbQGhQkm3qVjnYf/Ai/690D6uk33+AWDMpli0IxANSD8CpV6GCiNGjNpltpNy3dtUauADyO2cfWOLcoJkApJGMolLYS000lo4v1SGXUvffA2RwAoUtc4oYR0PM3DxO2YWKJP9EEm4H8ZN2rkVPd1MS9//b/8NSAgfqXQRRZCuYQWEnpIe9eu2xVYv2v5pqgUCi1kpCjiBOk2spCiCgRIyGghC7RQ6INShZB0Ma85uN38/rkAhGiuDiGDUrmldAYUIAmKoroq16QVNRmLFy6omr+wat78ygXzBj4/+XzpvPDUQi1/L/6xYP29Dnc7rLd3+bN4/aOODzuC+wI5z7o7//GhpXWD/pbn/BXeHO9cDl+6tZu1JG1ON1AqgWCSetqXALQYEBjm+BeDioIgqxZI4VSV41kUFXjIkQkdPGSSWq+ZbJifTGFADGBKtIt5dKl+sUMRVMcZoyClR+UVevaVqlQG4PIB6qXVUvUoDuMIfRRHV1zlvEKXFnre5egRAjOC9s/uhl5B2yFT9X3dbYNA6l4NxKdQBiVu/dMCJAxdoBpQe7K71d43vLgcCtwmfhgl6fV4uKcSSd7kIfsgktKdHx+Ao2Fp5YsqGfz5w/ygW48LTV9Q4moDzUeYjF6Ph84XAAA=) format('woff2'); }
     
     .disp { font-family: 'JP Display', serif; fill: #1D1D1B; }
     .caps { font-family: 'JP Sans', sans-serif; fill: #8E8E8C; text-transform: uppercase; }
@@ -11,6 +11,7 @@
     .grey { fill: #8E8E8C; }
     .rule { stroke: #8E8E8C; stroke-opacity: 0.45; stroke-width: 1; }
     .from-left { transform-box: fill-box; transform-origin: left center; }
+    .bx { transform-box: fill-box; transform-origin: center; }
 
     /* Each keyframe names only its starting point: the resting state is the plain, visible one,
        so a renderer that skips CSS animation still shows everything in place. */
@@ -19,6 +20,22 @@
       .draw { animation: draw 1.1s cubic-bezier(0.77, 0, 0.175, 1) both; }
       .fade { animation: fade 0.8s cubic-bezier(0.23, 1, 0.32, 1) both; }
       .lift { animation: lift 0.8s cubic-bezier(0.23, 1, 0.32, 1) both; }
+      .rise { transform-box: fill-box; }
+      /* Constant motion is linear; the pulse is a slow breath, not a blink. */
+      .ticker { transform-box: fill-box; animation: ticker 48s linear infinite; }
+      .pulse { animation: pulse 2.4s cubic-bezier(0.77, 0, 0.175, 1) infinite; }
+      .odo { animation: odo 13s cubic-bezier(0.77, 0, 0.175, 1) 2.2s infinite; }
+    }
+    @keyframes ticker { to { transform: translateX(-50%); } }
+    @keyframes pulse { 50% { opacity: 0.3; } }
+    /* Odometer: hold each phrase, then a short eased step up to the next. The last row repeats
+       the first, so the jump back to 0 is invisible. At rest it shows the first phrase. */
+    @keyframes odo {
+      0%, 21% { transform: translateY(0); }
+      25%, 46% { transform: translateY(-40px); }
+      50%, 71% { transform: translateY(-80px); }
+      75%, 96% { transform: translateY(-120px); }
+      100% { transform: translateY(-160px); }
     }
     @keyframes rise { from { transform: translateY(105%); } }
     @keyframes draw { from { transform: scaleX(0); } }
@@ -26,6 +43,8 @@
     @keyframes lift { from { opacity: 0; transform: translateY(10px); } }
 
   </style>
-  <text class="caps" x="0" y="17" font-size="13" letter-spacing="0.4" style="fill:#1D1D1B">X</text>
-  <path d="M17.3 15.5 L24.3 8.5 M18.8 8.5 H24.3 V14" stroke="#1D1D1B" stroke-width="1.1" fill="none"/>
+  <rect x="0.5" y="0.5" width="81" height="39" rx="3" fill="none" stroke="#8E8E8C" stroke-opacity="0.55"/>
+  <g transform="translate(16 12)"><g transform="scale(0.6667)"><path fill="#1D1D1B" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></g></g>
+  <text class="caps" x="42" y="24.5" font-size="12" letter-spacing="0.8" style="fill:#1D1D1B">X</text>
+  <path d="M59.7 23.5 L66.7 16.5 M61.2 16.5 H66.7 V22" stroke="#8E8E8C" stroke-width="1.1" fill="none"/>
 </svg>

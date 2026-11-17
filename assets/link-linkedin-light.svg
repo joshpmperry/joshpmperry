@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="79" height="24" viewBox="0 0 79 24" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" width="131" height="40" viewBox="0 0 131 40" role="img" aria-labelledby="t d">
   <!-- Fonts: Newsreader (c) 2020 The Newsreader Project Authors; Hanken Grotesk (c) 2021 The Hanken Grotesk Project Authors. Subsets embedded under the SIL Open Font License 1.1. -->
   <title id="t">LinkedIn</title>
   <desc id="d">LinkedIn, opens in a new page</desc>
   <style>
-    @font-face { font-family: 'JP Sans'; src: url(data:font/woff2;base64,d09GMgABAAAAAANUABAAAAAAB0AAAAL5AAMDVAAAAAAAAAAAAAAAAAAAAAAAAAAAGhYbgRIcKgZgP1NUQVRIAFQRCAqCOIFvATYCJAMgCxIABCAFhEgHIAwHG80FIJ4DbssMr2rqminydlKIehceTx8R1Q+/9ex7PwZFzIqi/EmCJTtwh5Lk8pTHZ40SIIMRcD68nb5DjS03BqqMi/iTwsOmqZ3FUdw6ESu0leehU9+/hCjEEQ5Iiws8hKXqFNwg3Vjt5f9h4f9cUy+S7h1oYZke4VHUOkH+qFNsYBMfUDzfG+bzqc5pulNGOJGq50/9hgRzQIkYimDqgkh0n1tcDd9pBzHBV4cjKGTC20xwRxBdGYuxcgWLW7KxGr0+uijdQMRAgSZKiWs1ZXSJkA6/BAB6OZtxLtRYHgPu0TEZIIwQuPib3O6zynCEU9q8/y+gPaIAgXzLNjiDETFW2KNxAb1UawgFDmcdBspTdHsMKj3vofagicoMBBQa9hjBHusAzI2V7owcBYqVVuCMbAWKEh9R7w51p27XLRQAiFT8EGOwBjPcBc8AdBiy1xyot5PZvKN9OJ+1RT33YUQ/mL06YvTas7btfJex0+3UM91cmDNmCeiPKLUXgbB4Wsd7OTh26CnR6Qtz85u36cc+QdNME8o2xyu7W0vz25vr6vL2hsHodNLWlu7sjavRoGxzXmZ/qyir+LGXoWxTv42pF0ujzhmyJfqGb2dGcsAnZXFdfMVTtXTnBufVb7d15gXnA/iPQmvu15915LT5Jf/Grf0Bfo2CMfC7C/uLSKglvQ2GCoRdx2p1EP8CKEoCxvknkmBZKUCZfxfpZ/OHzg6yCMb7PkDg1MxLMNJO8ANCOU44kcvST7k58C13NyKVB46lXhq6FpsizPMh0z0Vy/SK/PhIM9N8lsXMoo+NlpoGwYmkFCkCp5oGj5Ovg4kez4STx8aM4NnpccpTqI7vQu6bwYHQMLOx4whpEISFXSIFBTUtQsOhk1wXMyMFow42hgZmamY4dmQ0GjCSUe8vau/8Sjw1B4MONlHklCJESZIvW5aywHpiGm+T0fyDmFZeqMUPoKBlFuv7ZX1ZqcMvBhYgOhhShS6VIzPb+R4GOJqQtn6njlqzbwAA) format('woff2'); }
+    @font-face { font-family: 'JP Sans'; src: url(data:font/woff2;base64,d09GMgABAAAAAANYABAAAAAAB0AAAAL7AAMDVAAAAAAAAAAAAAAAAAAAAAAAAAAAGhYbgRIcKgZgP1NUQVRIAFQRCAqCOIFvATYCJAMgCxIABCAFhEgHIAwHG80FIC4GnLKJB1/V1IVivZ28Fs0dDp8e4vm3Yb9z38zWoqhdEeK/pFi6A/dRkh5PPPFVowRIMAbWh7fTd6ix5cZAlXERf1J42DS1sziKWydihbbyPHTq+5cQhTjCAWlxgYewWpqCG6Qbq738hwXI/8PC/7mmXiTdO9DCMj3Co6h1gvxRp9jAJj6geL43zOdTndN0p4xwIlXPn/oNCeaAEjEUwdQlkeg+t7gavtMOYoKvDgcoZMLbTHBHEF0Zi7FyDYs7srEavT66KN1AxECBJkqJazVldIWQDr8EAHo5n3Eu1FieAh7QMRkgjBC4+Jvc7bPKcIRT2rz/L6A9ogCBfMs2OIcRMVbYo3EJvVRrCAWOZx0GylN0ewwqPR+h9qCJygwEFBr2GMEe6wjMjZXunBwFipVW4JxsBYoSH1HvDnZs24oCAJGKH2IM1mCG++AFgA5D9poD9XYym3e0D+eztqiXPozoB7M3R4xee9a2ne+osdOtp2e6uTBnzBLQn1BqLwJh8byO93Jw7NhTotNX5ua3b9OPfYKmmSaUbY5XdreW5rc319Xl7Q2D0emkrS3d2RtXo0HZ5rzM/lZRVvFjL0PZpn4bUy+WRp0zZEv0Dd/OjOSAtbK4Lr7iqVq6c4Pz6rfbOvOC8wH8R6E1D+vPmkVtfsm/cWt/gd+jYAz86U4sEQm1pLfBUIGw61itDuJfAEVJwDj/RBIsKwUo8+8i/Wz+0NlBFsF43wcInJp5DUbaCX5CKMcpJ3JZ+iU3R77l7lak8sCJ1EtDN2JThHk+ZbqnYplekZ8faWaaL7KYWfSx0VLTIDiRlCJF4FTT4HHydTDR45lw8tiYETw7PU55CtXxXch9MzgQGmY2dhwhDYKwsEukoKCmRWg4dJLrYmakYNTBxtDATM0Mx46MRgNGMur9Re2dX4mn5mDQwSaKnFKEKEnyZctSFlhPTONtMpp/ENPKC7X4ARS0zGJ9v6wvK3X4xcACRAdDqtClcmRmO9/DAIcT0tYf1KHZdwAAAA==) format('woff2'); }
     
     .disp { font-family: 'JP Display', serif; fill: #1D1D1B; }
     .caps { font-family: 'JP Sans', sans-serif; fill: #8E8E8C; text-transform: uppercase; }
@@ -11,6 +11,7 @@
     .grey { fill: #8E8E8C; }
     .rule { stroke: #8E8E8C; stroke-opacity: 0.45; stroke-width: 1; }
     .from-left { transform-box: fill-box; transform-origin: left center; }
+    .bx { transform-box: fill-box; transform-origin: center; }
 
     /* Each keyframe names only its starting point: the resting state is the plain, visible one,
        so a renderer that skips CSS animation still shows everything in place. */
@@ -19,6 +20,22 @@
       .draw { animation: draw 1.1s cubic-bezier(0.77, 0, 0.175, 1) both; }
       .fade { animation: fade 0.8s cubic-bezier(0.23, 1, 0.32, 1) both; }
       .lift { animation: lift 0.8s cubic-bezier(0.23, 1, 0.32, 1) both; }
+      .rise { transform-box: fill-box; }
+      /* Constant motion is linear; the pulse is a slow breath, not a blink. */
+      .ticker { transform-box: fill-box; animation: ticker 48s linear infinite; }
+      .pulse { animation: pulse 2.4s cubic-bezier(0.77, 0, 0.175, 1) infinite; }
+      .odo { animation: odo 13s cubic-bezier(0.77, 0, 0.175, 1) 2.2s infinite; }
+    }
+    @keyframes ticker { to { transform: translateX(-50%); } }
+    @keyframes pulse { 50% { opacity: 0.3; } }
+    /* Odometer: hold each phrase, then a short eased step up to the next. The last row repeats
+       the first, so the jump back to 0 is invisible. At rest it shows the first phrase. */
+    @keyframes odo {
+      0%, 21% { transform: translateY(0); }
+      25%, 46% { transform: translateY(-40px); }
+      50%, 71% { transform: translateY(-80px); }
+      75%, 96% { transform: translateY(-120px); }
+      100% { transform: translateY(-160px); }
     }
     @keyframes rise { from { transform: translateY(105%); } }
     @keyframes draw { from { transform: scaleX(0); } }
@@ -26,6 +43,8 @@
     @keyframes lift { from { opacity: 0; transform: translateY(10px); } }
 
   </style>
-  <text class="caps" x="0" y="17" font-size="13" letter-spacing="0.4" style="fill:#1D1D1B">LinkedIn</text>
-  <path d="M66.9 15.5 L73.9 8.5 M68.4 8.5 H73.9 V14" stroke="#1D1D1B" stroke-width="1.1" fill="none"/>
+  <rect x="0.5" y="0.5" width="130" height="39" rx="3" fill="none" stroke="#8E8E8C" stroke-opacity="0.55"/>
+  <g transform="translate(16 12)"><g fill="none" stroke="#1D1D1B" stroke-width="1.2" stroke-linejoin="round"><rect x="0.6" y="4.1" width="14.8" height="10.3" rx="1.6"/><path d="M5.2 4.1V2.6a1 1 0 0 1 1-1h3.6a1 1 0 0 1 1 1v1.5M0.6 8.6h14.8"/></g></g>
+  <text class="caps" x="42" y="24.5" font-size="12" letter-spacing="0.8" style="fill:#1D1D1B">LinkedIn</text>
+  <path d="M108.5 23.5 L115.5 16.5 M110.0 16.5 H115.5 V22" stroke="#8E8E8C" stroke-width="1.1" fill="none"/>
 </svg>
